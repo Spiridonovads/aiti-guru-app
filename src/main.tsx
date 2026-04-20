@@ -1,14 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Provider } from 'react-redux';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import App from './App';
-import { store } from '@store/store';
-import '@styles/index.css';
+/*fonts*/
+import '@fontsource/cairo/400.css';
+import '@fontsource/cairo/500.css';
+import '@fontsource/open-sans/400.css';
+import '@fontsource/roboto-mono/400.css';
 
-const theme = createTheme();
+/*app*/
+import App from './app/App';
+import '@styles/index.css';
 
 const rootElement = document.getElementById('root');
 
@@ -18,11 +20,7 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
-    </Provider>
+    <CssBaseline />
+    <App />
   </StrictMode>,
 );

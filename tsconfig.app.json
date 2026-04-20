@@ -16,6 +16,7 @@
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@pages/*": ["src/pages/*"],
+      "@router/*": ["src/router/*"],
       "@store/*": ["src/store/*"],
       "@styles/*": ["src/styles/*"],
       "@types/*": ["src/types/*"],
